@@ -203,3 +203,46 @@ input[type=submit] {
   width: auto;
   max-width: 960px;
 }
+
+
+@media screen and (max-width: 640px) {
+  
+  /* Header is static to scroll with rest of the body */
+  .header {
+    position: static;
+    margin-bottom: 0px;
+  }
+
+
+  body .inner {
+    width: 100%;
+    margin: 0;
+  }
+
+  /* Extend name across the entire top */
+  .masthead-brand {
+    float: left;  
+    width: 100%;
+    margin: 0;
+  }
+
+  /* centering the links */
+  .inner nav {
+    float: none;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+  }
+
+  .nav-masthead .nav-link {
+    float: left;
+    margin: 30px 0; 
+  }
+
+  body .bigbody-container {
+    width: 97%;
+    margin: 15px;
+    padding-top: 210px;
+  }
+}
